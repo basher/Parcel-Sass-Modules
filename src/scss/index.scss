@@ -1,0 +1,6 @@
+@use 'base' as *;
+
+// Test Sass modules
+body {
+    color: $color-brand;
+}

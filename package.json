@@ -1,0 +1,23 @@
+{
+  "name": "parcel-sass-modules",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.5.0",
+    "parcel": "^2.5.0"
+  },
+  "scripts": {
+    "start": "parcel index.html --port 1234 --target app --open"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "targets": {
+    "app": {}
+  }
+}
