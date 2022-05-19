@@ -1,0 +1,8 @@
+// @use 'base' as *;
+
+// This works, with fully qualified relative path
+@use '../base' as *;
+
+body {
+    color: $color-brand;
+}
