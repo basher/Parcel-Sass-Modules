@@ -6,9 +6,9 @@
 - Includes [differential bundling](https://parceljs.org/features/targets/#differential-bundling) for production builds.
 
 ## Commands
-- `npm start` - Watches and compiles files, for development.
-- `npm run build` - Minifies files, for production.
-- `npm run storybook` - Launches Storybook/HTML. Run this in a separate terminal instance from Parcel.
+- `yarn start` - Watches and compiles files, for development.
+- `yarn build` - Minifies files, for production.
+- `yarn storybook` - Launches Storybook/HTML. Run this in a separate terminal instance from Parcel.
 
 ### Dev dependencies
 - Parcel's [default Babel presets](https://parceljs.org/languages/javascript/#default-presets)are sufficient. There's no need for a `.babelrc`.
