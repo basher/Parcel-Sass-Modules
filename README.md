@@ -11,7 +11,7 @@
 - `yarn storybook` - Launches Storybook/HTML. Run this in a separate terminal instance from Parcel.
 
 ### Dev dependencies
-- Parcel's [default Babel presets](https://parceljs.org/languages/javascript/#default-presets)are sufficient. There's no need for a `.babelrc`.
+- Parcel's [default Babel presets](https://parceljs.org/languages/javascript/#default-presets) are sufficient. There's no need for a `.babelrc`.
 - Sass compilation is done automatically. If Parcel sees Sass files in the project, it automatically installs `@parcel/transformer-sass`.
 - There is no need to install `postcss` or `autoprefixer`.
 - Storybook needs `babel-loader`.
