@@ -19,7 +19,7 @@
   "scripts": {
     "prestart": "rm -rf .parcel-cache",
     "start:parcel": "parcel watch src/js/index.js --hmr-port 1234 --target app",
-    "start": "npm install && npm run start:parcel",
+    "start": "npm run start:parcel",
     "prebuild": "rm -rf .parcel-cache && rm -rf build",
     "build:parcel": "parcel build index.html --dist-dir build",
     "build": "npm install && npm run build:parcel",
