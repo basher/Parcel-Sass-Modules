@@ -7,8 +7,8 @@
 
 ## Commands
 - `npm start` - Watches and compiles files, for development.
-- `npm build` - Minifies files, for production.
-- `npm storybook` - Launches Storybook/HTML. Run this in a separate terminal instance from Parcel.
+- `npm run build` - Minifies files, for production.
+- `npm run storybook` - Launches Storybook/HTML. Run this in a separate terminal instance from Parcel.
 
 ### Dev dependencies
 - Parcel's [default Babel presets](https://parceljs.org/languages/javascript/#default-presets)are sufficient. There's no need for a `.babelrc`.
