@@ -1,9 +1,11 @@
 # Parcel + Storybook/HTML
 
-- Minimal setup that allows Sass/JS to be bundled by Parcel, and consumed in Storybook.
-- Includes Sass Modules with `@forward` and `@use`.
+Minimal setup that allows Sass/JS to be bundled by Parcel, and consumed in Storybook.
+
+Includes:
+- Sass Modules with `@forward` and `@use`.
 - Hot Module Reloading in Storybook via the `--hmr-port` flag in `parcel watch` command.
-- Includes [differential bundling](https://parceljs.org/features/targets/#differential-bundling) for production builds.
+- [Differential bundling](https://parceljs.org/features/targets/#differential-bundling) for production builds.
 
 ## Commands
 - `yarn start` - Watches and compiles files, for development.
