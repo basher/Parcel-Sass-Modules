@@ -10,7 +10,7 @@ export default {
 };
 
 export const Test = () => `
-<div data-behaviour="test">
+<div data-trigger>
     <p>Testing... you should see some output in browser console if JS has fired!</p>
 </div>
 `
