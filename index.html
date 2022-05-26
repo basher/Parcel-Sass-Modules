@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Test Parcel with Sass Modules</title>
+    <title>Parcel Bundler + Storybook/HTML</title>
 </head>
 <body>
-    <h1>Test Parcel with Sass Modules</h1>
-    <p>Is there a problem with resolving Sass module relative paths???</p>
-    <script defer type="module" src="./src/js/index.js"></script>
+    <h1>Parcel Bundler + Storybook/HTML</h1>
+    <p>This page is the <i>"package.json"</i> build script entry point for Parcel bundler, enabling <a href="https://parceljs.org/features/targets/#differential-bundling">differential bundling</a> using the <strong>module/nomodule</strong> pattern, generating 2 JavaScript bundles:</p>
+    <ul>
+        <li>Smaller <strong>module</strong> bundle for modern browsers without transpiled ES6+ code.</li>
+        <li>Larger <strong>nomodule</strong> bundle with ES5 transpiled code for older browsers.</li>
+    </ul>
+    <script defer type="module" src="./src/index.js"></script>
 </body>
 </html>

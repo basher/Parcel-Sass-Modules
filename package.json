@@ -1,5 +1,5 @@
 {
-  "name": "parcel-sass-modules",
+  "name": "parcel-storybook-html",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -8,11 +8,22 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "@parcel/transformer-sass": "2.5.0",
-    "parcel": "^2.5.0"
+    "@parcel/transformer-sass": "2.6.0",
+    "@storybook/addon-a11y": "^6.5.5",
+    "@storybook/addon-essentials": "^6.5.5",
+    "@storybook/addon-links": "^6.5.5",
+    "@storybook/html": "^6.5.5",
+    "babel-loader": "^8.2.5",
+    "parcel": "^2.6.0"
   },
   "scripts": {
-    "start": "parcel index.html --port 1234 --target app --open"
+    "prestart": "rm -rf .parcel-cache",
+    "start:parcel": "parcel watch src/js/index.js --hmr-port 1234 --target app",
+    "start": "npm install && npm run start:parcel",
+    "prebuild": "rm -rf .parcel-cache && rm -rf build",
+    "build:parcel": "parcel build index.html --dist-dir build",
+    "build": "npm install && npm run build:parcel",
+    "storybook": "start-storybook -p 9009"
   },
   "browserslist": [
     "defaults"

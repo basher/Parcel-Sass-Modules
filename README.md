@@ -1,5 +1,17 @@
-# Parcel + Sass Modules
+# Parcel + Storybook/HTML
 
-Reduced test case to see if Sass Modules with `@forward` and `@use` work.
+- Minimal setup that allows Sass/JS to be bundled by Parcel, and consumed in Storybook.
+- Includes Sass Modules with `@forward` and `@use`.
+- Hot Module Reloading in Storybook via the `--hmr-port` flag in `parcel watch` command.
+- Includes [differential bundling](https://parceljs.org/features/targets/#differential-bundling) for production builds.
 
-Run `yarn start` to open page in browser... hopefully with compiled Sass.
+## Commands
+- `npm start` - Watches and compiles files, for development.
+- `npm build` - Minifies files, for production.
+- `npm storybook` - Launches Storybook/HTML. Run this in a separate terminal instance from Parcel.
+
+### Dev dependencies
+- Parcel's [default Babel presets](https://parceljs.org/languages/javascript/#default-presets)are sufficient. There's no need for a `.babelrc`.
+- Sass compilation is done automatically. If Parcel sees Sass files in the project, it automatically installs `@parcel/transformer-sass`.
+- There is no need to install `postcss` or `autoprefixer`.
+- Storybook needs `babel-loader`.
